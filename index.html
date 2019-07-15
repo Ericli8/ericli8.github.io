@@ -59,7 +59,7 @@
 <body>
 	
 	
-<audio controls="controls" autoplay="autoplay" style="display: none;">
+<audio controls="controls" autoplay="autoplay" style="display: none;" id="audio1">
     <source src="http://dyrshb.cn/yy2019/yy.mp3"/>
 </audio>
   <div class="swiper-container">
@@ -147,6 +147,18 @@
     direction: 'vertical', // 垂直切换选项
     loop: true, // 循环模式选项
   })        
+  
+          setInterval(function(){
+            audio1.play();
+        },30000);
+        //进入页面的音乐
+        var audio1 = document.getElementById("audio1");
+            audio1.play();
+            audio1.loop;
+            document.addEventListener("WeixinJSBridgeReady", function(){
+                audio1.play();
+                audio1.loop;
+            });
   </script>
   
 </body>
