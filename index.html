@@ -1,201 +1,331 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-<script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Have a great/smashing one! </title>
-	<style type="text/css">
-	    html, body {
-      position: relative;
-      height: 100%;
-    }
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color:#000;
-      margin: 0;
-      padding: 0;
-    }
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
 
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-			width: 100%!important;
-			height: 100%;
-			overflow: hidden;
-    }
-		.box-text{font-weight: bolder;font-size: 16px; text-align: center; padding-top:50px; width: 100%;}
-		.box-img{width:80%;margin: 0 auto;display: block;}
-		.box-img img{width: 100%;display: block;}
-		.sweriboxz{width: 100%;overflow: hidden;display: block;}
-		.swiper-slide-tititt{font-size:18px;font-weight: bolder;width: 80%;margin: 0 auto; line-height:48px;} 
-    .box2pimg{width:100%;margin: 0 auto;}
-		.box2pimg img{display: block;width:160px;margin: 0 auto;}
-		.inputclass{border: 1px solid #393939;width: 100px; height:35px; border-radius: 4px; font-size: 16px;line-height:35px;padding-left: 4px;padding-right: 4px;}
-		.inputbtn{width:80px; height:40PX; text-align: center; display: block;background: #0077FF;line-height: 40px;font-size:16px;color: #FFFFFF;margin-top: 30px;}
-		.inputyz{width: 100%; height: 100%;background: #FFFFFF;position: fixed;z-index: 9999;top:0px;left: 0px;}
-	    .inputyz-box{padding-top:30%;width: 80%;margin: 0 auto;}
-	    .inputyz-textp{font-size: 14px;font-weight:bolder;}
-	</style>
-	<script>
-		$(function(){
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Have a great/smashing one! </title>
+		<style type="text/css">
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
 			
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
 			
+			.swiper-container {
+				width: 100%;
+				height: 100%;
+			}
 			
-			$("#textbtn").click(function(){
-				var testidvalue=$("#textgo").val()
-			    console.log(testidvalue)
-			    if(testidvalue=="07161007"){
-			    	   $(".inputyz").css({"display":"none"})
-			    }else{
-			    	
-			    	alert("嘻嘻，不对")
-			    	
-			    }
-			    
-				
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+				width: 100%!important;
+				height: 100%;
+				overflow: hidden;
+			}
+			
+			.box-text {
+				font-weight: bolder;
+				font-size: 18px;
+				text-align: center;
+				padding-top: 50px;
+				width: 100%;
+			}
+			
+			.box-img {
+				width: 80%;
+				margin: 0 auto;
+				display: block;
+			}
+			
+			.box-img img {
+				width: 100%;
+				display: block;
+			}
+			
+			.sweriboxz {
+				width: 100%;
+				overflow: hidden;
+				display: block;
+			}
+			
+			.swiper-slide-tititt {
+				font-size: 24px;
+				font-weight: bolder;
+				width: 80%;
+				margin: 0 auto;
+				line-height: 48px;
+			}
+			
+			.box2pimg {
+				width: 100%;
+				margin: 0 auto;
+			}
+			
+			.box2pimg img {
+				display: block;
+				width: 160px;
+				margin: 0 auto;
+			}
+			
+			.inputclass {
+				border: 1px solid #393939;
+				width: 100px;
+				height: 35px;
+				border-radius: 4px;
+				font-size: 16px;
+				line-height: 35px;
+				padding-left: 4px;
+				padding-right: 4px;
+			}
+			
+			.inputbtn {
+				width: 80px;
+				height: 40PX;
+				text-align: center;
+				display: block;
+				background: #0077FF;
+				line-height: 40px;
+				font-size: 16px;
+				color: #FFFFFF;
+				margin-top: 30px;
+			}
+			
+			.inputyz {
+				width: 100%;
+				height: 100%;
+				background: #FFFFFF;
+				position: fixed;
+				z-index: 9999;
+				top: 0px;
+				left: 0px;
+			}
+			
+			.inputyz-box {
+				padding-top: 30%;
+				width: 80%;
+				margin: 0 auto;
+			}
+			
+			.inputyz-textp {
+				font-size: 14px;
+				font-weight: bolder;
+			}
+			
+			.swiper-pagination-progressbar {
+				background: #FFFFFF!important;
+				width: 2px!important;
+			}
+		</style>
+		<script>
+			$(function() {
+
+				$("#textbtn").click(function() {
+					var testidvalue = $("#textgo").val()
+					console.log(testidvalue)
+					if(testidvalue == "07161007") {
+						$(".inputyz").css({
+							"display": "none"
+						})
+					} else {
+
+						alert("嘻嘻，不对")
+
+					}
+
+				})
+
 			})
-			
-			
-			
-		})
-	</script>
-</head>
-<body>
-<div class="inputyz">
-	<div class="inputyz-box">
-		<p class="inputyz-textp">输入正确的数字进去才可以打开奥</p>
-	     <input type="number" id="textgo" class="inputclass">
-	     <div id="textbtn" class="inputbtn">ENTER</div>  
-	</div>
+		</script>
+	</head>
 
-</div>
+	<body>
+		<div class="inputyz">
+			<div class="inputyz-box">
+				<p class="inputyz-textp">输入正确的数字进去才可以打开奥</p>
+				<input type="number" id="textgo" class="inputclass">
+				<div id="textbtn" class="inputbtn">ENTER</div>
+			</div>
 
-<audio controls="controls" autoplay="autoplay" style="display: none;" id="audio1">
-    <source src="http://dyrshb.cn/yy2019/yy.mp3"/>
-</audio>
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
+		</div>
 
+		<audio controls="controls" autoplay="autoplay" style="display: none;" id="audio1">
+			<source src="http://dyrshb.cn/yy2019/yy.mp3" />
+		</audio>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt" style="font-size: 26px;">二十二年前</div>
+				</div>
+
+				<div class="swiper-slide">
 					<div class="sweriboxz">
-					<div class="box-img">
-				    <img src="img/2345yy1.jpg">
+						<div class="box-img">
+							<img src="img/22zy.jpg">
+						</div>
+						<div class="box-text">感谢阿姨把小可爱生的这么好看</div>
 					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="sweriboxz">
+						<div class="box-img">
+							<img src="img/2345yy1.jpg">
+						</div>
 						<div class="box-text">呐你之前发给我的，15岁哈哈哈哈</div>
 					</div>
-			</div>
-			<div class="swiper-slide">
-				<div class="swiper-slide-tititt">咔嚓一下</div>
-			</div>
-      <div class="swiper-slide">
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt">咔嚓一下</div>
+				</div>
+				<div class="swiper-slide">
 					<div class="sweriboxz">
-					<div class="box-img">
-						<img src="img/zy02.jpg">
-					</div>
+						<div class="box-img">
+							<img src="img/zy02.jpg">
+						</div>
 						<div class="box-text">16岁啦</div>
 					</div>
-				 </div>			
-	<div class="swiper-slide">
-			<div class="swiper-slide-tititt">今天也算是我和你一块正儿八经的过一次生日</div>
-	</div> 			 
-	<div class="swiper-slide">
-			<div class="swiper-slide-tititt">大家都祝生日快乐，生日是谁？</div>
-	</div> 			
-	<div class="swiper-slide">
-			<div class="swiper-slide-tititt">“生日它快不快乐有什么要紧的。</br>
-			在这个世界上，我希望你是快乐的。</br>
-			都自由，都拥有。”
-			</div>
-	</div> 			
-
-
-			<div class="swiper-slide">
-					<div class="swiper-slide-tititt"><div class="box2pimg">
-					<img src="img/emjio.jpg">
-					</div>
-					</div>
-			</div> 
-			<div class="swiper-slide">
-					<div class="swiper-slide-tititt">那个我也没想出什么诗句</div>
-			</div> 
-		 <div class="swiper-slide">
-			 <div class="swiper-slide-tititt">
-				 就是简单的，我喜欢你
-			 </div>
-	   </div> 
-			<div class="swiper-slide">
-				<div class="swiper-slide-tititt">
-						我想和你在一块
 				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt">今天也算是我和你一块正儿八经的过一次生日</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt">那个我也没想出什么诗句</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="sweriboxz">
+						<div class="box-img">
+							<img src="img/jiangluole.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt">
+						就是简单的，我喜欢你
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt">
+						我想和你在一块
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt">
+						天天一块吃饭
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt">
+						一块工作 一块生活
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt">
+						一屋，俩人，三餐，四季！
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt">
+						共同分担，一起努力
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt">
+						<div style="font-size: 26px;">以后只要有我一口饭吃</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt">
+						就有你一个碗刷！！！哈哈哈哈
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt">
+						<div class="box2pimg">
+							<img src="img/emjio.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt">今天你生日</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt">我就不祝你快乐了
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt"> 我给你快乐</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="swiper-slide-tititt">
+					在这个世界上，我希望你是快乐的。</br>
+					都自由，都拥有。”
+					</div>
+				</div>
+			    <div class="swiper-slide">
+	                <img src="img/beijing.jpg" style="width: 100%; display: block;">
+				</div>
+				
 			</div>
-					 <div class="swiper-slide">
-						 <div class="swiper-slide-tititt">
-							 天天一块吃饭
-						 </div>
-			</div>
-			<div class="swiper-slide">
-						 <div class="swiper-slide-tititt">
-							 一块工作 一块生活
-						 </div>
-			</div>
-			<div class="swiper-slide">
-						 <div class="swiper-slide-tititt">
-							 一屋，俩人，三餐，四季！
-						 </div>
-			</div>	
-			<div class="swiper-slide">
-						 <div class="swiper-slide-tititt">
-							共同分担，一起努力
-						 </div>
-			</div>
-			
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-<script>        
-  var mySwiper = new Swiper ('.swiper-container', {
-    direction: 'vertical', // 垂直切换选项
-    loop: true, // 循环模式选项
-  })        
-  
-          setInterval(function(){
-            audio1.play();
-        },30000);
-        //进入页面的音乐
-        var audio1 = document.getElementById("audio1");
-            audio1.play();
-            audio1.loop;
-            document.addEventListener("WeixinJSBridgeReady", function(){
-                audio1.play();
-                audio1.loop;
-            });
-  </script>
-  
-</body>
+
+		</div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+		</div>
+		<script>
+			var mySwiper = new Swiper('.swiper-container', {
+				direction: 'vertical', // 垂直切换选项
+				loop: true, // 循环模式选项
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'progressbar',
+					progressbarOpposite: true,
+				}
+			})
+
+			setInterval(function() {
+				audio1.play();
+			}, 30000);
+			//进入页面的音乐
+			var audio1 = document.getElementById("audio1");
+			audio1.play();
+			audio1.loop;
+			document.addEventListener("WeixinJSBridgeReady", function() {
+				audio1.play();
+				audio1.loop;
+			});
+		</script>
+
+	</body>
+
 </html>
